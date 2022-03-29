@@ -47,7 +47,7 @@ addEventListener("DOMContentLoaded", async()=>{
     content.insertAdjacentElement("beforeend", a);
     //Menu
     let img = document.createElement('IMG');
-    img.src = obj.menu.img;
+    img.src = obj.menu.img;   
     img.width = "200";
     header.insertAdjacentElement("beforeend",img);
     menu.append(listaMenu(fn.lista(obj.menu,"href","innerText")));
