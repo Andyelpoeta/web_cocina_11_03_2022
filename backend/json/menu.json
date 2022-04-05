@@ -1,6 +1,6 @@
 {
-    "img": "multimedia\/img\/logo.png",
     "enlace":[
+    
         {
             "nombre": "Home",
             "ruta": "#"

@@ -9,15 +9,15 @@
     },
     "comidas":[
         {
-            "img":"multimedia\/img\/pizza2.jpg",
+            "img":"multimedia\/img\/bg2.jpg",
             "titulo": "Special Salads"
         },
         {
-            "img": "multimedia\/img\/logo.png",
+            "img": "multimedia\/img\/bg3.jpg",
             "titulo": "Special Sopu"
         },
         {
-            "img": "multimedia\/img\/rico1.jpg",
+            "img": "multimedia\/img\/sbor.jpg",
             "titulo": "Special Pasta"
         },
         {

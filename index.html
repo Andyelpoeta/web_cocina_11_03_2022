@@ -13,7 +13,10 @@
 <body>
      <!-- Menu -->
      <header>
-        <ul></ul>
+         <div class="logo">
+            <h2>FOOD<span>.</span></h2>
+         </div>
+        <ul ></ul>
     </header>
 
     <!-- Inicio -->
@@ -51,5 +54,12 @@
             
            
     </section>
+    <script type="text/javascript">
+    window.addEventListener("scroll",function(){
+        const header = document.querySelector("header");header.classList.toggle("sticky",window.scrollY > 0);
+    });
+
+    </script>
+
 </body>
 </html>
