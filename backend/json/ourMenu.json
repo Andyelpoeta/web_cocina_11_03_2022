@@ -9,28 +9,28 @@
     },
     "comidas":[
         {
-            "img":"multimedia\/img\/bg2.jpg",
+            "img":"multimedia\/img\/menu1.jpg",
             "titulo": "Special Salads"
         },
         {
-            "img": "multimedia\/img\/bg3.jpg",
+            "img": "multimedia\/img\/menu2.jpg",
             "titulo": "Special Sopu"
         },
         {
-            "img": "multimedia\/img\/sbor.jpg",
+            "img": "multimedia\/img\/menu3.jpg",
             "titulo": "Special Pasta"
         },
         {
-            "img": "multimedia\/img\/rico5.jpg",
+            "img": "multimedia\/img\/menu4.jpg",
             "titulo": "Special Salads"
         },
         {
-            "img": "multimedia\/img\/rico2.jpg",
+            "img": "multimedia\/img\/menu5.jpg",
             "titulo": "Special Sopu"
         },
         {
-            "img": "multimedia\/img\/rico4.jpg",
-            "titulo": "Special Pasta"
+            "img": "multimedia\/img\/menu6.jpg",
+            "titulo": "Special Salaad"
         }
     ]
 }

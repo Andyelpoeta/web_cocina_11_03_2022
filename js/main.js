@@ -19,6 +19,7 @@ addEventListener("DOMContentLoaded", async()=>{
     let aperitivosContainer = document.querySelectorAll(".menu .title");
     let aperitivosParrafos = document.querySelector(".menu .title p");
     let listaAperitivos= document.querySelector(".menu .content ");
+    //let listaExpertos=document.querySelector("")//
     console.log(obj);
 
     let sobre= document.querySelector(".about")
@@ -65,6 +66,6 @@ addEventListener("DOMContentLoaded", async()=>{
     a.insertAdjacentText("beforeend", obj.ourMenu.boton.nombre);
     a.href = obj.ourMenu.boton.ruta;
     a.classList = "btn";
-    aperitivosContainer[0].insertAdjacentElement("beforeend", a);
-   
+    listaAperitivos.insertAdjacentElement("beforeend", a);
+   //lista de expertos//
 })
