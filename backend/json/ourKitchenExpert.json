@@ -1,20 +1,24 @@
 {
     "titulo": "Our Kitchen Expert",
     "descripcion": {
-        "parrafo1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eius tempora ipsum magnam maxime molestiae. Delectus nam iusto non quibusdam, nihil necessitatibus iste ad recusandae, aspernatur saepe omnis numquam provident!"
+        "parrafo1": "Según el chef Daniel Jiménez, para catalogar a un restaurante de costoso y exclusivo este  no solo debe ofrecer un menú elevado. Su ambiente, ubicación, los productos que manejen, ya sean nacionales o internacionales deben estar bajo un sello de calidad que respalden la elección del comensal al momento de vivir su experiencia.!"
     },
     "equipo":[
         {
-            "img": "#",
-            "titulo": "Someone Famous"
+            "img": "multimedia\/img\/expert1.jpg",
+            "titulo": "Dabiz Muñoz.( España )."
         },
         {
-            "img": "#",
-            "titulo": "Someone Famous"
+            "img": "multimedia\/img\/expert2.jpg",
+            "titulo": "Björn Frantzén.( Suecia )."
         },
         {
-            "img": "#",
-            "titulo": "Someone Famous"
+            "img": "multimedia\/img\/expert3.jpg",
+            "titulo": "Ana Ros. ( Eslovenia )."
+        },
+        {
+            "img": "multimedia\/img\/expert4.jpg",
+            "titulo": "Rene Redzepi. ( Italia )."
         }
     ]
 }

@@ -32,8 +32,54 @@ const listaAperitivos =(obj)=>{
     obj.comidas.forEach(element=>{
      plantilla +=`
         <div class="box">
-            <div class="imgBox">
+            <div class="imgBx">
            <img src="${element.img} " >
+            </div>
+            <div class="text">
+             <h3>${element.titulo} </h3>
+            </div>
+        </div>`;  
+    });  
+    return plantilla;
+}
+const listaExpert =(obj)=>{
+    let plantilla ="";
+    obj.equipo.forEach(element=>{
+     plantilla +=`
+        <div class="box">
+            <div class="imgBx">
+           <img src="${element.img} " >
+            </div>
+            <div class="text">
+             <h3>${element.titulo} </h3>
+            </div>
+        </div>`;  
+    });  
+    return plantilla;
+}
+const listaTestimonios =(obj)=>{
+    let plantilla ="";
+    obj.testimonios.forEach(element=>{
+     plantilla +=`
+        <div class="box">
+            <div class="imgBx">
+           <img src="${element.img} " >
+            </div>
+            <div class="text">
+            <p>${element.descriptcion}</p>
+             <h3>${element.titulo} </h3>
+            </div>
+        </div>`;  
+    });  
+    return plantilla;
+}
+const listaContactos =(obj)=>{
+    let plantilla ="";
+    obj.comunicate.forEach(element=>{
+     plantilla +=`
+        <div class="box">
+            <div class="imgBx">
+           <img" >
             </div>
             <div class="text">
              <h3>${element.titulo} </h3>
@@ -44,9 +90,14 @@ const listaAperitivos =(obj)=>{
 }
 
 
+
+
 export const fn = {
     descriptcion,
     lista,
     tituloDiseno,
-    listaAperitivos
+    listaAperitivos,
+    listaExpert,
+    listaTestimonios,
+    listaContactos
 };

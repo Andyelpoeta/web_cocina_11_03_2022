@@ -107,9 +107,189 @@ header ul li a:hover{
 section{
     padding: 100px;
 }
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50 {
+    position: relative;
+    width: 48%;
+   
+}
 
+.titleText {
+   
+    color:#111;
+    font-size: 2.5em;
+    font-weight: 300;
+}
 
+/*----La letra a-----*/
+.titleText span{
+   
+    color:#ff0157;
+    font-weight: 700;
+    font-size:1.5em ;
+}
 
+.row .col50 .imgBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/*-----Esta  es la primera imagen bajando------*/
+.row .col50 .imgBox img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
 
+.menu .content .box{
+    width: 340px;
+    margin:20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.8);
+}
+.menu .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
 
+.menu .content .box .imgBx img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content .box .text{
+   text-align: center;
+   padding: 7px;
+}
+
+.menu .content .box .imgBx .text h3{
+    font-weight: 400;
+    color:#111;
+
+}
+.expert .content{
+   display: flex; 
+   justify-content: center;
+   flex-wrap: wrap;
+   flex-direction: row;
+   margin-top:40px;
+}
+.expert .content .box {
+    width: 250px;
+    margin: 15px;
+}
+.expert .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.expert .content .box .imgBx img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.8);
+    object-fit: cover;
+}
+.expert .content .box .text{
+    padding: 15px 0 5px;
+    text-align: center;
+}
+.expert .content .box .imgBx .text h3 {
+    font-weight: 400;
+    color: #111;
+}
+.testimonios{
+    background:url(../multimedia/img/bg2.jpg);
+    background-size:cover ;
+}
+
+.titlewhite .titleText{
+    color:#fff;
+    
+}
+.testimonios  p{
+    color:#fff;
+}
+
+.testimonios .content{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     flex-direction: row;
+     margin-top: 40px;
+}
+.testimonios .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.testimonios .content .box .imgBx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom:20px ;
+    border-radius:50% ;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+
+}
+
+.testimonios .content .box .imgBx img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonios .content .box .text{
+    text-align: center;
+}
+.testimonios .content .box .text p{
+    color: #666;
+    font-style: italic;
+}
+.testimonios .content .box .text h3{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: #ff0157;
+    font-weight:600;
+}

@@ -15,11 +15,19 @@ addEventListener("DOMContentLoaded", async()=>{
     
     let sobreContainer = document.querySelector("#about .row .col50 ");
     let sobreParrafo = document.querySelector("#about .row .col50 p");
-    let sobreimg = document.querySelector("#about .row .col50 .imgBx");
+    let sobreimg = document.querySelector("#about .row .col50 .imgBox");
     let aperitivosContainer = document.querySelectorAll(".menu .title");
     let aperitivosParrafos = document.querySelector(".menu .title p");
     let listaAperitivos= document.querySelector(".menu .content ");
-    //let listaExpertos=document.querySelector("")//
+    let expertContainer = document.querySelectorAll(".expert .title");
+    let expertParrafos = document.querySelector(".expert .title p");
+    let listaExpert= document.querySelector(".expert .content ");
+    let testimoniosContainer = document.querySelectorAll(".testimonios .titlewhite");
+    let testimoniosParrafos = document.querySelector(".testimonios .titlewhite p");
+    let listaTestimonios= document.querySelector(".testimonios .content ");
+    let contactosContainer = document.querySelectorAll(".contacto .title");
+    let contactosParrafos = document.querySelector(".contacto .title p");
+    let listaContactos= document.querySelector(".contacto .contaform ");
     console.log(obj);
 
     let sobre= document.querySelector(".about")
@@ -47,18 +55,18 @@ addEventListener("DOMContentLoaded", async()=>{
     a.href = obj.inicio.boton.ruta;
     a.classList = "btn";
     content.insertAdjacentElement("beforeend", a);
-    
+    //Menu//
+  
     menu.append(listaMenu(fn.lista(obj.menu,"href","innerText")));
     // Sobre nosotros
     sobreContainer.insertAdjacentHTML("afterbegin",fn.tituloDiseno(obj.aboutUs.titulo));
     sobreParrafo.insertAdjacentText("beforeend", fn.descriptcion(obj.aboutUs));
     let img = document.createElement('IMG');
     img.src = obj.aboutUs.img;
-    img.width ="";
     sobreimg.insertAdjacentElement("beforeend",img);
 
     //lista de aperitivos//
-    aperitivosContainer[0].insertAdjacentHTML("afterbegin", fn.tituloDiseno(obj.ourMenu.titulo,1));
+    aperitivosContainer[0].insertAdjacentHTML("afterbegin", fn.tituloDiseno(obj.ourMenu.titulo,));
     aperitivosParrafos.insertAdjacentText("beforeend", fn.descriptcion(obj.ourMenu));
     listaAperitivos.insertAdjacentHTML("afterbegin", fn.listaAperitivos(obj.ourMenu));
     
@@ -67,5 +75,21 @@ addEventListener("DOMContentLoaded", async()=>{
     a.href = obj.ourMenu.boton.ruta;
     a.classList = "btn";
     listaAperitivos.insertAdjacentElement("beforeend", a);
+
    //lista de expertos//
+   expertContainer[0].insertAdjacentHTML("afterbegin", fn.tituloDiseno(obj.ourKitchenExpert.titulo));
+   expertParrafos.insertAdjacentText("beforeend", fn.descriptcion(obj.ourKitchenExpert));
+   listaExpert.insertAdjacentHTML("afterbegin", fn.listaExpert(obj.ourKitchenExpert));
+   
+   //Testimonios//
+   testimoniosContainer[0].insertAdjacentHTML("afterbegin", fn.tituloDiseno(obj.theySaidAboutUs.titulo));
+   testimoniosParrafos.insertAdjacentText("beforeend", fn.descriptcion(obj.theySaidAboutUs));
+   listaTestimonios.insertAdjacentHTML("afterbegin", fn.listaTestimonios(obj.theySaidAboutUs));
+
+   //Contactos//
+   contactosContainer.insertAdjacentHTML("afterbegin", fn.tituloDiseno(obj.contactos.titulo));
+   contactosParrafos.insertAdjacentText("beforeend", fn.descriptcion(obj.contactos));
+   listaContactos.insertAdjacentHTML("afterbegin", fn.listaContactos(obj.contactos));
+
+   
 })
