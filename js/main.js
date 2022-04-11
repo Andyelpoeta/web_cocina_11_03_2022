@@ -25,9 +25,9 @@ addEventListener("DOMContentLoaded", async()=>{
     let testimoniosContainer = document.querySelectorAll(".testimonios .titlewhite");
     let testimoniosParrafos = document.querySelector(".testimonios .titlewhite p");
     let listaTestimonios= document.querySelector(".testimonios .content ");
-    let contactosContainer = document.querySelectorAll(".contacto .title");
-    let contactosParrafos = document.querySelector(".contacto .title p");
-    let listaContactos= document.querySelector(".contacto .contaform ");
+    let contactoContainer = document.querySelectorAll(".contactos .title");
+    let contactoParrafos = document.querySelector(".contactos .title p");
+    let listaContactos= document.querySelector(".contactos .contaform ");
     console.log(obj);
 
     let sobre= document.querySelector(".about")
@@ -66,7 +66,7 @@ addEventListener("DOMContentLoaded", async()=>{
     sobreimg.insertAdjacentElement("beforeend",img);
 
     //lista de aperitivos//
-    aperitivosContainer[0].insertAdjacentHTML("afterbegin", fn.tituloDiseno(obj.ourMenu.titulo,));
+    aperitivosContainer[0].insertAdjacentHTML("afterbegin", fn.tituloDiseno(obj.ourMenu.titulo));
     aperitivosParrafos.insertAdjacentText("beforeend", fn.descriptcion(obj.ourMenu));
     listaAperitivos.insertAdjacentHTML("afterbegin", fn.listaAperitivos(obj.ourMenu));
     
@@ -87,9 +87,9 @@ addEventListener("DOMContentLoaded", async()=>{
    listaTestimonios.insertAdjacentHTML("afterbegin", fn.listaTestimonios(obj.theySaidAboutUs));
 
    //Contactos//
-   contactosContainer.insertAdjacentHTML("afterbegin", fn.tituloDiseno(obj.contactos.titulo));
-   contactosParrafos.insertAdjacentText("beforeend", fn.descriptcion(obj.contactos));
-   listaContactos.insertAdjacentHTML("afterbegin", fn.listaContactos(obj.contactos));
+   contactoContainer.insertAdjacentHTML("afterbegin", fn.tituloDiseno(obj.contaCto.titulo));
+   contactoParrafos.insertAdjacentText("beforeend", fn.descriptcion(obj.contaCto));
+   listaContactos.insertAdjacentHTML("afterbegin", fn.listaContactos(obj.contaCto));
 
    
 })

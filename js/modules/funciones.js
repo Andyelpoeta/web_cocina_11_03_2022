@@ -75,11 +75,11 @@ const listaTestimonios =(obj)=>{
 }
 const listaContactos =(obj)=>{
     let plantilla ="";
-    obj.comunicate.forEach(element=>{
+    obj.contacto.forEach(element=>{
      plantilla +=`
         <div class="box">
             <div class="imgBx">
-           <img" >
+            <img src="${element.img} " >
             </div>
             <div class="text">
              <h3>${element.titulo} </h3>
@@ -88,10 +88,6 @@ const listaContactos =(obj)=>{
     });  
     return plantilla;
 }
-
-
-
-
 export const fn = {
     descriptcion,
     lista,

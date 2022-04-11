@@ -23,5 +23,8 @@
     $json->aboutUs = (object) $abrir(
         archivo: "aboutUs.json"
     );
+    $json->contaCto = (object) $abrir(
+        archivo: "contaCto.json"
+    );
     echo json_encode($json, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 ?>
