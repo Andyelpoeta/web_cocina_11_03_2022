@@ -26,15 +26,17 @@ body{
 .banner .content{
     max-width: 900px;
     text-align: center;
-    
 }
 .banner .content h2{
     font-size: 5em;
     color: white;
 }
 .banner .content p{
+    color:rgb(215, 216, 216);
     font-size: 1em;
-    color: white;
+    font-weight: 600;
+    text-align: center;
+    
 }
 .btn{
     font-size: 1em;
@@ -85,23 +87,23 @@ header .logo span{
    color: #ff0158; 
 }
 
-header ul {
+header .navigation {
     position: relative;
-    display: flex;
+    display: flex;  
 }
-header ul li {
+header .navigation li {
     list-style: none;
     margin-left: 30px;
 }
-header ul li a{
+header .navigation li a{
     text-decoration: none;
     color: white;
-    font-weight: 300;
+    font-weight: 500;
 }
-header.sticky ul li a{
+header.sticky .navigation li a{
     color: #111;
 }
-header ul li a:hover{
+header .navigation li a:hover{
     color: #ff0157;
 }
 section{
@@ -123,7 +125,7 @@ section{
    
     color:#111;
     font-size: 2.5em;
-    font-weight: 300;
+    font-weight: 450;
 }
 
 /*----La letra a-----*/
@@ -133,6 +135,12 @@ section{
     font-weight: 700;
     font-size:1.5em ;
 }
+.col50 p{
+    color:#666;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+ }
 
 .row .col50 .imgBox{
     position: relative;
@@ -155,7 +163,12 @@ section{
     align-items: center;
     flex-direction: column;
 }
-
+.menu  p{
+    color:#666;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+ }
 .menu .content{
     display: flex;
     justify-content: center;
@@ -193,6 +206,12 @@ section{
     font-weight: 400;
     color:#111;
 
+} 
+.expert .title p{
+   color:#666;
+   font-size: 1em;
+   font-weight: 600;
+   text-align: center;
 }
 .expert .content{
    display: flex; 
@@ -235,11 +254,15 @@ section{
 
 .titlewhite .titleText{
     color:#fff;
+    text-align: center;
     
 }
 .testimonios  p{
-    color:#fff;
-}
+    color:rgb(197, 196, 196);
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+ }
 
 .testimonios .content{
      display: flex;
@@ -283,9 +306,11 @@ section{
     text-align: center;
 }
 .testimonios .content .box .text p{
-    color: #666;
-    font-style: italic;
-}
+    color:#666;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+ }
 .testimonios .content .box .text h3{
     margin-top: 20px;
     color: #111;
@@ -293,3 +318,187 @@ section{
     color: #ff0157;
     font-weight:600;
 }
+.contactos{
+   background:url(../multimedia/img/bg3.jpg);
+    background-size: cover ;
+} 
+.contactos p{
+    color:#666;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+ }
+.contac{
+    padding:75px 50px ;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contac h3{
+    color:#111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.contac  .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contac .inputBox input,
+.contac .inputBox textarea
+{
+    width: 100%;
+    border:2px solid #555;
+    padding: 10px;
+    color:#111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contac  .inputBox input[type="submit"]
+{
+   font-size: 1em;
+   color: #fff;
+   background:#ff0157;
+   display: inline-block;
+   text-transform: uppercase;
+   text-decoration: none;
+   letter-spacing:2px ;
+   transition:0.5s;
+   max-width: 100px;
+   font-weight: 500;
+   border: none;
+   cursor: pointer;
+}
+.copringText{
+    padding: 8px 40px;
+    border-top:1px solid rgba(0,0,0,0.1);
+    text-align: center;
+   
+}
+.copringText p{
+    color:#666;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+   
+
+}
+.copringText a{
+    color:#ff0157;
+    font-weight: 500;
+    text-decoration: none;
+}
+@media(max-width: 991px) 
+{
+    header,
+    header.sticky{
+       padding: 10px 20px;
+   } 
+    header .navigation{
+       display: none;
+   }
+    header .navigation.active{
+      width: 100%; 
+      height: calc(100% - 68px);
+      position: fixed;
+      top: 68px;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background:rgb(232, 232, 232)
+    }
+    header .navigation li{
+        margin-left: 0;
+    }
+    header .navigation li a{
+       color:#111;
+       font-size: 1.6em;
+    }
+
+
+    .menuToggle{
+       position: relative;
+       width: 40px;
+       height: 40px;
+       background: url(../multimedia/img/menu.png);
+       background-size:30px;
+       background-repeat: no-repeat;
+       background-position: center;
+       cursor: pointer;
+    }
+    .menuToggle.active{
+       background: url(../multimedia/img/close.png);
+       background-size:25px;
+       background-repeat: no-repeat;
+       background-position: center;
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 20px;
+    }
+    .banner .content h2{
+       font-size: 2em; 
+    
+       
+    }
+    .content h2{
+        font-size: 2em; 
+    }
+    .row{
+       flex-direction: column;
+    }
+    
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 {
+        height: 300px;
+        margin-top: 20px;
+     
+    }
+    .menu .content{
+        margin-top: 20px;
+    }
+    .menu .content .box{
+        margin: 10px;
+    }
+    .menu .content .box .imgBx{
+        height: 260px;
+    }
+    .titleText {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    .testimonios .content .box{
+        margin: 10px;
+        padding: 20px;
+    }
+    .contac{
+        padding:35px 40px ;
+        margin-top: 20px;
+        margin-bottom:30px ;
+    }
+}
+@media(max-width: 480px)
+{
+    .banner .content h2 
+    {
+        font-size:2.2em;
+        color:#fff;
+    }
+}
+  
+   
+

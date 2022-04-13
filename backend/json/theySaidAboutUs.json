@@ -1,22 +1,22 @@
 {
-    "titulo": "they Said About Us",
+    "titulo": "They Said About Us",
     "descripcion": {
         "parrafo1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eius tempora ipsum magnam maxime molestiae. Delectus nam iusto non quibusdam, nihil necessitatibus iste ad recusandae, aspernatur saepe omnis numquam provident!"
     },
     "testimonios":[
         {
             "img": "multimedia\/img\/testi1.jpg",
-            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eius tempora ipsum magnam maxime molestiae. Delectus nam iusto non quibusdam, nihil necessitatibus iste ad recusandae, aspernatur saepe omnis numquam provident!",
+            "descriptcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eius tempora ipsum magnam maxime molestiae. Delectus nam iusto non quibusdam, nihil necessitatibus iste ad recusandae, aspernatur saepe omnis numquam provident!",
             "titulo": "Someone Famous"
         },
         {
             "img": "multimedia\/img\/testi2.jpg",
-            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eius tempora ipsum magnam maxime molestiae. Delectus nam iusto non quibusdam, nihil necessitatibus iste ad recusandae, aspernatur saepe omnis numquam provident!",
+            "descriptcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eius tempora ipsum magnam maxime molestiae. Delectus nam iusto non quibusdam, nihil necessitatibus iste ad recusandae, aspernatur saepe omnis numquam provident!",
             "titulo": "Someone Famous"
         },
         {
             "img": "multimedia\/img\/testi3.jpg",
-            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eius tempora ipsum magnam maxime molestiae. Delectus nam iusto non quibusdam, nihil necessitatibus iste ad recusandae, aspernatur saepe omnis numquam provident!",
+            "descriptcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eius tempora ipsum magnam maxime molestiae. Delectus nam iusto non quibusdam, nihil necessitatibus iste ad recusandae, aspernatur saepe omnis numquam provident!",
             "titulo": "Someone Famous"
         }
     ]

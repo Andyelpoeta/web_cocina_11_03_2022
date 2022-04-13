@@ -3,27 +3,28 @@
     
         {
             "nombre": "Home",
-            "ruta": "#"
+            "ruta": "#banner"
         },
         {
             "nombre": "About",
-            "ruta": "#"
+            "ruta": "#about"
+            
         },
         {
             "nombre": "Menu",
-            "ruta": "#"
+            "ruta": "#menu"
         },
         {
             "nombre": "Expert",
-            "ruta": "#"
+            "ruta": "#expert"
         },
         {
             "nombre": "Testimonials",
-            "ruta": "#"
+            "ruta": "#testimonios"
         },
         {
             "nombre": "Contact",
-            "ruta": "#"
+            "ruta": "#contactos"
         }
     ]
 }

@@ -2,7 +2,7 @@ import {fn} from './modules/funciones.js';
 // backend/php/api.php
 addEventListener("DOMContentLoaded", async()=>{
     //Peticion al archivo PHP
-    let peticion = await fetch("backend/php/api.php");
+    let peticion = await fetch("https://andyelpoeta.000webhostapp.com/web_cocina_11_03_2022/backend/php/api.php");
     let obj = await peticion.json();
     
     
@@ -11,7 +11,7 @@ addEventListener("DOMContentLoaded", async()=>{
     let header = document.querySelector("header");
     let titulo = document.querySelector(".content h2");
     let parrafo = document.querySelector(".content p");
-    let menu = document.querySelector("header ul  ");
+    let menu = document.querySelector("header .navigation ");
     
     let sobreContainer = document.querySelector("#about .row .col50 ");
     let sobreParrafo = document.querySelector("#about .row .col50 p");
@@ -23,15 +23,14 @@ addEventListener("DOMContentLoaded", async()=>{
     let expertParrafos = document.querySelector(".expert .title p");
     let listaExpert= document.querySelector(".expert .content ");
     let testimoniosContainer = document.querySelectorAll(".testimonios .titlewhite");
-    let testimoniosParrafos = document.querySelector(".testimonios .titlewhite p");
-    let listaTestimonios= document.querySelector(".testimonios .content ");
-    let contactoContainer = document.querySelectorAll(".contactos .title");
-    let contactoParrafos = document.querySelector(".contactos .title p");
-    let listaContactos= document.querySelector(".contactos .contaform ");
+    let testimoniosParrafos = document.querySelector(".testimonios .titlewhite  p");
+    let listaTestimonios= document.querySelector(".testimonios .content");
+    let contactoContainer = document.querySelectorAll(".contactos .title ");
+    let contactoParrafos = document.querySelector(".contactos .title p ");
+    let listaContactos= document.querySelector(".contactos .contac ");
     console.log(obj);
 
-    let sobre= document.querySelector(".about")
-    let Aperitivos= document.querySelector(".menu")
+    
 
     //Lista de menu del Dom//
     let listaMenu = (lista, container="LI", hijo="A")=>{
@@ -49,7 +48,7 @@ addEventListener("DOMContentLoaded", async()=>{
 
     // inicio//
     titulo.insertAdjacentText("beforeend", obj.inicio.titulo);
-    parrafo.insertAdjacentText("beforeend", fn.descriptcion(obj.inicio));
+    parrafo.insertAdjacentText("beforeend", fn.descripcion(obj.inicio));
     let a = document.createElement('A');
     a.insertAdjacentText("beforeend", obj.inicio.boton.nombre);
     a.href = obj.inicio.boton.ruta;
@@ -60,14 +59,14 @@ addEventListener("DOMContentLoaded", async()=>{
     menu.append(listaMenu(fn.lista(obj.menu,"href","innerText")));
     // Sobre nosotros
     sobreContainer.insertAdjacentHTML("afterbegin",fn.tituloDiseno(obj.aboutUs.titulo));
-    sobreParrafo.insertAdjacentText("beforeend", fn.descriptcion(obj.aboutUs));
+    sobreParrafo.insertAdjacentText("beforeend", fn.descripcion(obj.aboutUs));
     let img = document.createElement('IMG');
     img.src = obj.aboutUs.img;
     sobreimg.insertAdjacentElement("beforeend",img);
 
     //lista de aperitivos//
     aperitivosContainer[0].insertAdjacentHTML("afterbegin", fn.tituloDiseno(obj.ourMenu.titulo));
-    aperitivosParrafos.insertAdjacentText("beforeend", fn.descriptcion(obj.ourMenu));
+    aperitivosParrafos.insertAdjacentText("beforeend", fn.descripcion(obj.ourMenu));
     listaAperitivos.insertAdjacentHTML("afterbegin", fn.listaAperitivos(obj.ourMenu));
     
     a = document.createElement('A');
@@ -78,17 +77,17 @@ addEventListener("DOMContentLoaded", async()=>{
 
    //lista de expertos//
    expertContainer[0].insertAdjacentHTML("afterbegin", fn.tituloDiseno(obj.ourKitchenExpert.titulo));
-   expertParrafos.insertAdjacentText("beforeend", fn.descriptcion(obj.ourKitchenExpert));
+   expertParrafos.insertAdjacentText("beforeend", fn.descripcion(obj.ourKitchenExpert));
    listaExpert.insertAdjacentHTML("afterbegin", fn.listaExpert(obj.ourKitchenExpert));
    
    //Testimonios//
    testimoniosContainer[0].insertAdjacentHTML("afterbegin", fn.tituloDiseno(obj.theySaidAboutUs.titulo));
-   testimoniosParrafos.insertAdjacentText("beforeend", fn.descriptcion(obj.theySaidAboutUs));
+   testimoniosParrafos.insertAdjacentText("beforeend", fn.descripcion(obj.theySaidAboutUs));
    listaTestimonios.insertAdjacentHTML("afterbegin", fn.listaTestimonios(obj.theySaidAboutUs));
 
    //Contactos//
-   contactoContainer.insertAdjacentHTML("afterbegin", fn.tituloDiseno(obj.contaCto.titulo));
-   contactoParrafos.insertAdjacentText("beforeend", fn.descriptcion(obj.contaCto));
+   contactoContainer[0].insertAdjacentHTML("afterbegin", fn.tituloDiseno(obj.contaCto.titulo));
+   contactoParrafos.insertAdjacentText("beforeend", fn.descripcion(obj.contaCto));
    listaContactos.insertAdjacentHTML("afterbegin", fn.listaContactos(obj.contaCto));
 
    
