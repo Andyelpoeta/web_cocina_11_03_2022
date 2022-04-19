@@ -6,19 +6,19 @@
     "equipo":[
         {
             "img": "multimedia\/img\/expert1.jpg",
-            "titulo": "Dabiz Muñoz.( España )."
+            "titulo": "Dabiz Muñoz.(España)"
         },
         {
             "img": "multimedia\/img\/expert2.jpg",
-            "titulo": "Björn Frantzén.( Suecia )."
+            "titulo": "Björn Frantzén.(Suecia)"
         },
         {
             "img": "multimedia\/img\/expert3.jpg",
-            "titulo": "Ana Ros. ( Eslovenia )."
+            "titulo": "Ana Ros. (Eslovenia)"
         },
         {
             "img": "multimedia\/img\/expert4.jpg",
-            "titulo": "Rene Redzepi. ( Italia )."
+            "titulo": "Rene Redzepi. (Italia)"
         }
     ]
 }
